@@ -64,7 +64,7 @@ nav img{
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 24px;
     color: #fff;
 }
 nav .fa{
@@ -102,10 +102,12 @@ nav .fa{
     }
 }
 .about{
-    width: 80%;
+    background-color: lightyellow;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 h1{
     font-size: 36px;
@@ -117,4 +119,29 @@ p{
     font-weight: 300px;
     line-height: 22px;
     padding: 10px;
+}
+.resume{
+    background: url(images/kai-pilger-Ef6iL87-vOA-unsplash.jpg) repeat 0 0;
+    color: lightyellow;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.resume a{
+    color: lightyellow;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+}
+.contact{
+    background-color: lightyellow;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 100px;
 }
