@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>Initial Test</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="blurb">
-        <h1>Hi there, I'm Shane!</h1>
-        <p>Who am I?</p>
-      </div>
-    </div>
-    <footer>
-      <ul>
-        <li><a href="mailto:shanepkelly316@gmail.com">Contact</a></li>
-        <li>
-          <a href="https://github.com/RedUn1verse">github.com/RedUn1verse</a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">MORE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Shane Kelly</h1>
+            <p>This text is a placeholder for what will be added later.</p>
+            <a href="">visit us to know more</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <h1>Test holder</h1>
+        <p>blah blah holder text</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
 </html>
