@@ -15,10 +15,10 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">RESUME</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a>HOME</a></li>
+                    <li><a onClick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">ABOUT</a></li>
+                    <li><a onClick="document.getElementById('resume').scrollIntoView({behavior: 'smooth'});">RESUME</a></li>
+                    <li><a onClick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -29,16 +29,21 @@
         </div>
     </section>
 
+    <div id="about">
     <section class="about">
         <h1>Test holder</h1>
         <p>blah blah holder text</p>
     </section>
+    </div>
 
+    <div id="resume">
     <section class="resume">
         <h1>Resume</h1>
         <a href="resume.pdf" target="_blank">PDF</a>
     </section>
+    </div>
 
+    <div id="contact">
     <section class="contact">
         <h1>Contact Me</h1>
         <li><a href="mailto:shanepkelly316@gmail.com">Mail</a></li>
@@ -46,6 +51,7 @@
         <a href="https://github.com/RedUn1verse">Github</a>
         </li>
     </section>
+    </div>
 
     <script>
         var navLinks = document.getElementById("navLinks");
